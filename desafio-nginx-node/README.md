@@ -4,7 +4,7 @@
 
 ### Instructions
 
-To run the challenge, run the command below:
+To run the challenge, run the command below from repository root:
 
 ```sh
 cd desafio-nginx-node
