@@ -7,6 +7,7 @@
 To run the challenge, run the command below:
 
 ```sh
+cd desafio-nginx-node
 docker-compose up -d
 ```
 
