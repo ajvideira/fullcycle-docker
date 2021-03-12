@@ -22,9 +22,10 @@ services:
       context: node/
       dockerfile: Dockerfile
     container_name: app
-    entrypoint: dockerize -wait tcp://db:3306 -timeout 60s npm run dev
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 60s node index.js
     volumes:
       - ./node:/usr/src/app
+      - /usr/src/app/node_modules
     ports:
       - '3000:3000'
     tty: true
